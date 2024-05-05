@@ -88,8 +88,7 @@ nav{
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-.navigation li:hover,
-.navigation a:active {
+.navigation :hover{
     color: var(--title-color);
     background-color: var(--nav-hover-background-color);
 }
