@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLace</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Lautaro Guevara - ">
+    <meta name="author" content="Lautaro Guevara">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="light-blue"></div>
+        <h1>Argentina</h1>
+        <div class="light-blue"></div>
+    </header>
+    <main>
+        <picture class="hero">
+            <source media="(min-width: 600px)" srcset="images/hero-large.webp">
+            <img src="images/hero-small.webp" alt="">
+        </picture>
+        <div class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><span class="label">Area:</span> <span class="value">2,780,400 km²</span></li>
+                <li><span class="label">Population:</span> <span class="value">46,234,830</span></li>
+                <li><span class="label">Capital:</span> <span class="value">Buenos Aires</span></li>
+                <li><span class="label">Languages:</span> <span class="value">Español</span></li>
+                <li><span class="label">Currency:</span> <span class="value">Argentine Peso</span></li>
+                <li><span class="label">Time Zone:</span> <span class="value">UTC -3</span></li>
+                <li><span class="label">Calling Code:</span> <span class="value">+54</span></li>
+                <li><span class="label">Internet TLD:</span> <span class="value">.ar</span></li>
+            </ul>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="weather icon" id="icon">
+            <ul>
+                <li><span class="label">Temperature:</span><span class="value" id="temperature"></span></li>
+                <li><span class="label">Conditions:</span><span class="value" id="conditions"></span></li>
+                <li><span class="label">Wind:</span><span class="value" id="wind"></span></li>
+                <li><span class="label">Wind Chill:</span><span class="value" id="wind-chill"></span></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span>| Lautaro Guevara | Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

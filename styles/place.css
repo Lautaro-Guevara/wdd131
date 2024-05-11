@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Font */
+    --font-title: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+body{
+    font-family: var(--font-body);
+}
+
+header div{
+    background-color: #75AADB;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    color: #FFD700;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.5);
+    font-family: var(--font-title);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+main{
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+/* cards */
+
+div{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+h2{
+    text-align: center;
+}
+
+ul{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+li{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-decoration: none;
+    list-style: none;
+    padding-top: .5rem;
+}
+
+.label {
+    text-align: end;
+    font-weight: bold;
+    padding-right: 0.25rem;
+
+}
+
+.value {
+    text-align: start;
+    padding-left: 0.25rem;
+}
+
+/* Data card */
+
+
+
+
+
+.hero img {
+    width: 100%;
+    height: auto;
+    
+}
+
+/* weather card */
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#icon{
+    display: grid;
+    width: 25%;
+    
+}
+
+
+/* footer */
+
+footer{
+    background-color:#75AADB;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,52 @@
+@media only screen and (min-width: 600px){
+
+    main{
+        margin: 0 auto;
+    }
+
+    main div{
+        position: absolute;
+        background-color: rgba(240, 248, 255, 0.856) ;
+        top: 0;
+        
+    }
+
+    h2{
+        position: relative;
+        right: 30px;
+        padding: 1rem;
+        background-color: #75aadbb2;
+        text-align: start;
+        color: white;
+    }
+
+    .data{
+        max-width: 300px;
+        top: 200px;
+        left: 100px;
+    }
+
+    .weather{
+        display: block;
+        top: 800px;
+        left: 1000px;
+
+    }
+
+    .weather h2::after {
+        content: "⛅";
+        font-size: 30px; 
+        right: auto; 
+        left: 0; 
+    }
+
+    img{
+        max-width: 1400px;
+        min-width: 1300px;
+        
+    }
+
+    #icon{
+        display: none;
+    }
+}
