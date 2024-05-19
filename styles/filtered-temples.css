@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --color-purple-dark: #4B0082;
+    --color-blue-dark: #000080;
+    --color-gray-dark: #333333;
+    --color-white: #FFFFFF;
+    /* Fonts */
+    --font-title: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    /* Variables */
+    --title-color: var(--color-purple-dark);
+    --text-color: var(--color-white);
+    --background-color: var(--color-purple-dark);
+    --nav-background-color: var(--color-gray-dark);
+    --nav-hover-background-color: var(--color-blue-dark);
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+h1 {
+    display: grid;
+    color: var(--text-color);
+    background-color: var(--nav-background-color);
+    grid-column: 1;
+    grid-row: 1;
+    
+}
+
+#menu {
+    display: grid;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: var(--nav-background-color);
+    color: var(--text-color);
+    justify-content: right;
+}
+
+#menu::before {
+    content: '≡';
+}
+
+nav{
+    grid-column: 1 / span 2;
+    grid-row: span 2;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    grid-column:  2;
+    grid-row: span 2;
+    justify-content: right;
+    background-color: var(--nav-background-color);
+    
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 700;
+    transition: .5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation li:hover {
+    color: var(--title-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.show li {
+    display: block;
+    
+}
+
+#menu.show::before {
+    content: 'X';
+}
+
+/* Styles for the album section */
+
+main{
+    padding: 1rem;
+}
+
+h2{
+    text-align: center;
+}
+
+.album{
+    display: grid;
+    grid-template-columns: auto;
+    grid-column: auto;
+    justify-content: center;
+    grid-gap: 25px;
+}
+
+.temple-card{
+    border: 1px solid #bbb;
+    text-align: center;
+    background-color: #f3f3f3;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.temple-card h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+    color: #000080;
+  }
+
+.label{
+    color: #320055;
+    font-weight: bolder;
+}
+
+.temple-card figure img{
+    width: 90%;
+    margin-top: 1rem;
+    box-shadow: 0 0 30px #333333;
+}
+
+
+/* footer style */
+
+footer{
+    background-color: #000080;
+}
+
+footer p{
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem;
+}
