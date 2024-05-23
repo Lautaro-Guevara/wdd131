@@ -87,6 +87,7 @@ const temples = [
 	}
   ];
 
+
 const homeLink = document.querySelector('#home');
 const oldLink = document.querySelector('#old');
 const newLink = document.querySelector('#new');
@@ -114,7 +115,9 @@ smallLink.addEventListener('click', () =>{
 	createTempleCard(temples.filter(temple => temple.area < 10000))
 } );
 
-
+addEventListener( 'DOMContentLoaded', () => {
+	createTempleCard(temples)
+})
 
 
     const templeContainer = document.querySelector('.temple-container');

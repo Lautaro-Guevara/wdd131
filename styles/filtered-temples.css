@@ -88,8 +88,8 @@ nav{
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-.navigation:hover{
-    border: 0 solid white;
+nav a:hover {
+	text-decoration: underline double;
 }
 
 .navigation li:hover {
