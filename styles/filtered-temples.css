@@ -88,11 +88,8 @@ nav{
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-nav a:hover {
-	text-decoration: underline double;
-}
 
-.navigation li:hover {
+nav li:hover {
     color: var(--title-color);
     background-color: var(--nav-hover-background-color);
 }
