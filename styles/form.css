@@ -77,7 +77,7 @@ text-align: center
 
   
   .button{
-    display: flexbox;
+    display: flex;
     justify-content: center;
     margin: 1rem;
     background-color: navy;
