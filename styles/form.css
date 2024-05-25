@@ -11,12 +11,14 @@ h1{
 }
 
 form{
+  display: grid;
   width: 650px;
   margin: 0 auto;
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -25,12 +27,38 @@ label{
   display: grid;
 }
 
-input date{
+input,
+select,
+textarea{
+  font-size: 18px;
+}
+
+#product-name,
+#name{
   min-height: 44px;
 }
 
+textarea{
+  height: 100px;
+}
 
+#date-installation{
+  min-height: 44px;
+}
 
+.features p{
+  padding-left: 1rem;
+}
+
+.features label {
+  display: flex;
+  align-items: center;
+  
+}
+
+.features input[type="checkbox"] {
+  margin-right: 5px; /* Adjust the margin as needed */
+}
 
 
 /* use reverse flexbox to take advantage of flex-direction: reverse */
@@ -40,7 +68,7 @@ input date{
     width: 160px;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: 40px auto;
+    margin: 10px auto;
     position: relative;
   }
   /* hide the inputs */
@@ -49,8 +77,8 @@ input date{
   }
   /* set properties of all labels */
   .star-rating > label {
-    width: 30px;
-    height: 30px;
+    width: 150px;
+    height: 10px;
     font-family: Arial;
     font-size: 30px;
     transition: 0.2s ease;
@@ -85,6 +113,26 @@ input date{
   }  
   
 
+
+  
+  .button{
+    display: flexbox;
+    justify-content: center;
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    width: 95%;
+}
+
+.button:hover{
+    background-color: darkgreen;
+}
+
+
   /* footer style */
 
 footer{
@@ -92,7 +140,7 @@ footer{
 }
 
 footer p{
-    color: var(--text-color);
+    color: white;
     text-align: center;
     padding: 1rem;
 }
