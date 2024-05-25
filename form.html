@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Product Review</h1>
+        <form action="review.html" method="get">
+            <fieldset>
+                
+                <label for="product-name">Product Name
+                <select name="product-name" id="product-name" required>
+                    <option value="" disabled selected>Select a Product</option>
+                </select></label>
+                <label for="star-rating">Overall Rating
+                <div class="star-rating">
+                    
+                    <input type="radio" name="stars" id="star-a" value="5"/>
+                    <label for="star-a"></label>
+
+                    <input type="radio" name="stars" id="star-b" value="4"/>
+                    <label for="star-b"></label>
+                
+                    <input type="radio" name="stars" id="star-c" value="3"/>
+                    <label for="star-c"></label>
+                
+                    <input type="radio" name="stars" id="star-d" value="2"/>
+                    <label for="star-d"></label>
+                
+                    <input type="radio" name="stars" id="star-e" value="1"/>
+                    <label for="star-e"></label>
+                </div>
+                </label>
+
+            <label for="date-installation">Date of Installation<input type="date" id="date-installation" name="date-installation" required></label>
+
+            <label for="checkbox">Which features did you find useful in the product? (Check all that apply)
+                <input type="checkbox" name="durability" id="durability" value="durability">Durability
+                <input type="checkbox" name="ease-use" id="ease-use" value="ease-use">Ease of Use
+                <input type="checkbox" name="performance" id="performance" value="performance">Performance
+                <input type="checkbox" name="desing" id="desing" value="desing">Desing
+            </label>
+            
+                <label for="review">Written Review <section>(Optional)</section>
+                <Textarea id="review" name="review"></Textarea></label>
+
+                <label for="name">Your Name<section>(Optional)</section>
+                    <input type="text" id="name" name="name">
+                </label>
+
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span>| Lautaro Guevara | Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
